@@ -38,10 +38,10 @@ conflicts: []
 alternatives: []
 resources:
 - type: home
-  uri: http://rubyworks.github.com/facets
+  uri: https://github.com/AndyObtiva/facets-glimmer
   label: Homepage
 - type: code
-  uri: http://github.com/rubyworks/facets
+  uri: https://github.com/AndyObtiva/facets-glimmer
   label: Source Code
 - type: docs
   uri: http://rubyworks.github.com/facets/learn.html
@@ -65,9 +65,9 @@ paths:
   load:
   - lib/core
   - lib/standard
-name: facets
-title: Ruby Facets
-version: 3.1.0
+name: facets-glimmer
+title: Ruby Facets - Glimmer Edition
+version: 3.2.0
 summary: The orginal well curated collection of extension methods for Ruby.
 slogan: ALL YOUR BASE ARE BELONG TO RUBY!
 description: Facets is the premier collection of extension methods for the Ruby programming
@@ -75,6 +75,6 @@ description: Facets is the premier collection of extension methods for the Ruby 
   in individual files allowing for highly granular control of requirements. In addition,
   Facets includes a few additional classes and mixins suitable to wide variety of
   applications.
-scm_uri: https://github.com/rubyworks/facets/tree/master
+scm_uri: https://github.com/AndyObtiva/facets-glimmer/tree/master
 created: '2004-12-16'
-date: '2016-05-09'
+date: '2022-06-17'

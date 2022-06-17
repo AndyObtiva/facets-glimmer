@@ -1,4 +1,4 @@
-# Ruby Facets
+# Ruby Facets 3.2.0
 
 [![Gem Version](https://badge.fury.io/rb/facets.svg)](http://badge.fury.io/rb/facets)
 [![Build Status](https://secure.travis-ci.org/rubyworks/facets.svg)](http://travis-ci.org/rubyworks/facets) &nbsp; &nbsp;
@@ -7,6 +7,7 @@
 
 *"ALL YOUR BASE ARE BELONG TO RUBY"*
 
+This is the [Glimmer](https://github.com/AndyObtiva/glimmer) fork of the Ruby Facets project, packaged as the [facets-glimmer](https://rubygems.org/gems/facets-glimmer) gem.
 
 ## Introduction
 
@@ -56,13 +57,13 @@ If you are using Bundler with your project, add the facets gem to the project's
 Gemfile. Unless you want all of facets loaded be sure to add the `:require => false`
 option.
 
-    gem "facets", require: false
+    gem "facets-glimmer", require: false
 
 ### RubyGems
 
 The easiest way to install is via RubyGems.
 
-    $ gem install facets
+    $ gem install facets-glimmer
 
 ### Setup.rb
 
@@ -130,7 +131,7 @@ general purpose.
 
 #### Method File Names
 
-Operator method redirect files are stored using English names. For instance 
+Operator method redirect files are stored using English names. For instance
 `Proc#*` is `proc/op_mul`.
 
 For reference, here is the chart.
@@ -190,6 +191,39 @@ To load 'ostruct.rb' plus Facets extensions for it simply use:
 For details pertaining to the functionality of each feature,
 please see the API documentation.
 
+## Compatibility
+
+### MRI CRuby Compatibility
+
+Facets 2.8+ requires Ruby 1.8.7 or higher. Facets 3.0+ requires Ruby 2.0.0 or higher.
+
+### JRuby Compatibility
+
+This gem is fully compatible with [JRuby](https://www.jruby.org/), mapping JRuby versions to the [MRI CRuby Compatibility](#mri-cruby-compatibility) guidelines (e.g. JRuby 9.3.4.0 supports Ruby 2.6.x, and thus works with Facets 3.0+).
+
+### RubyMotion Compatibility
+
+This gem is mostly compatible with [RubyMotion](https://www.rubymotion.com/) as it loads all Core and Standard APIs upon including the gem except for the following files:
+- Core exclusions:
+  - core/facets/range/nudge.rb
+  - core/facets/applique/file_helpers.rb
+  - core/facets/enumerable/recursively.rb
+  - core/facets/hash/recursively.rb
+  - core/facets/functor.rb
+  - core/facets/lazy.rb
+  - core/facets/enumerable/associate.rb
+  - core/facets/kernel/as.rb
+  - core/facets/kernel/ergo.rb
+- Standard exclusions:
+  - standard/facets/uri/query.rb
+  - standard/facets/date.rb
+  - standard/facets/memoizer.rb
+  - standard/facets/enumargs.rb
+  - standard/facets/erb.rb
+  - standard/facets/fileutils/outofdate.rb
+  - standard/facets/interval.rb
+  - standard/facets/pathname/op_div.rb
+  - standard/facets/pathname/exists.rb
 
 ## Contribute
 
@@ -217,6 +251,11 @@ build tools, which most developers are familiar with.
 Note, that while these build tools can be easy circumvented, the Mast and Indexer tools are
 necessary to prepare Facets for release.
 
+To build the Ruby gem, run this command:
+
+```
+rake package
+```
 
 ## Authors
 
@@ -232,7 +271,7 @@ otherwise shall fall under the this license (which is BSD 2-clause).
 
 In all cases, every effort has been made to give credit where credit is due.
 You will find these acknowledgments embedded in the source code. You can see
-them in "CREDIT:" and/or "@author" lines. 
+them in "CREDIT:" and/or "@author" lines.
 Also see the [Contributors page](https://github.com/rubyworks/facets/wiki/Contributors)
 on the Wiki for a list of all contributing Rubyists. If anyone is missing from
 the list, please let us know so we can correct. Thanks.
@@ -246,7 +285,7 @@ If need be, he can be reached via email at transfire at gmail.com.
 The collection PER COLLECTION is licensed as follows:
 
     Ruby Facets
-    Copyright (c) 2005 Rubyworks
+    Copyright (c) 2005-2022 Rubyworks
 
     Distributed under the terms of the BSD-2 License (same as Ruby license).
 
@@ -261,7 +300,6 @@ code under such license, with appropriate credit citations.
 
 ## "ALL YOUR BASE ARE BELONG TO RUBY!"
 
-Ruby Facets, Copyright (c) 2005 Rubyworks
+Ruby Facets, Copyright (c) 2005-2022 Rubyworks
 
 Do you Ruby? (http://ruby-lang.org)
-

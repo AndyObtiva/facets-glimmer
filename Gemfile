@@ -1,5 +1,10 @@
 source "https://rubygems.org"
 
+group :development do
+  gem 'mast'
+  gem 'indexer'
+end
+
 group :test do
   gem 'lemon'
   gem 'qed'
