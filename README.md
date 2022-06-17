@@ -1,6 +1,6 @@
 # Ruby Facets 3.2.0
 
-[![Gem Version](https://badge.fury.io/rb/facets.svg)](http://badge.fury.io/rb/facets)
+[![Gem Version](https://badge.fury.io/rb/facets-glimmer.svg)](http://badge.fury.io/rb/facets-glimmer)
 [![Build Status](https://secure.travis-ci.org/rubyworks/facets.svg)](http://travis-ci.org/rubyworks/facets) &nbsp; &nbsp;
 [![Flattr Me](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/324911/Rubyworks-Ruby-Development-Fund)
 
@@ -297,7 +297,13 @@ are given in their respective source. At this point, all licensing has been norm
 for all included code. Original authors have given permission for inclusion of their
 code under such license, with appropriate credit citations.
 
+## TODO
 
+[TODO.md](TODO.md)
+
+## Changes
+
+[CHANGES.md](CHANGES.md)
 ## "ALL YOUR BASE ARE BELONG TO RUBY!"
 
 Ruby Facets, Copyright (c) 2005-2022 Rubyworks

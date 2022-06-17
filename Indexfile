@@ -3,7 +3,7 @@ name:
   facets-glimmer
 
 version:
-  3.2.0
+  3.3.0
 
 title:
   Ruby Facets
@@ -43,10 +43,11 @@ scm_uri:
    AndyObtiva/facets-glimmer/tree/master
 
 authors:
-  - Thomas Sawyer <transfire@gmail.com>, Andy Maleh
+  - Thomas Sawyer <transfire@gmail.com>
+  - Andy Maleh <andy.am@gmail.com>
 
 copyrights:
-  - (c) 2004 Rubyworks (BSD-2-Clause)
+  - (c) 2004-2022 Rubyworks (BSD-2-Clause)
 
 created:
   "2004-12-16"

@@ -7,6 +7,8 @@ sources:
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
+- name: Andy Maleh
+  email: andy.am@gmail.com
 organizations:
 - name: Rubyworks
 requirements:
@@ -66,7 +68,7 @@ repositories:
 categories: []
 copyrights:
 - holder: Rubyworks
-  year: '2004'
+  year: '2022'
   license: BSD-2-Clause
 customs: []
 paths:
@@ -76,7 +78,7 @@ paths:
   - lib/standard
 name: facets-glimmer
 title: Ruby Facets
-version: 3.2.0
+version: 3.3.0
 summary: The orginal well curated collection of extension methods for Ruby.
 slogan: ALL YOUR BASE ARE BELONG TO RUBY!
 description: Facets is the premier collection of extension methods for the Ruby programming
